@@ -1,8 +1,7 @@
-/* Reset de base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body {
@@ -30,18 +29,21 @@ h1 {
 }
 
 .choices button {
-  font-size: 1rem;
-  padding: 1px 1px;
   border: none;
   border-radius: 10px;
-  background-color: red;
-  color: white;
+  background-color: blue;
   cursor: pointer;
   transition: background-color 0.3s;
+  padding: 5px;
 }
 
 .choices button:hover {
   background-color: #2980b9;
+}
+
+.choices img {
+  width: 80px;
+  height: auto;
 }
 
 #resultat {
@@ -61,20 +63,15 @@ h1 {
 @media (min-width: 600px) {
   .choices {
     flex-direction: row;
+    justify-content: center;
   }
 
-  .choices button {
-    font-size: 1rem;
-    padding: 10px 20px;
+  .choices img {
+    width: 120px;
   }
 
   .score {
     flex-direction: row;
     gap: 30px;
   }
-}
-
-.images{
-  width: 80px;
-
 }
